@@ -31,7 +31,7 @@ class owncloud::params {
     }
     'RedHat': {
       case $::operatingsystem {
-        'CentOS': {
+        'CentOS','Fedora': {
           $datadirectory = '/var/www/html/owncloud/data'
           $documentroot  = '/var/www/html/owncloud'
           $package_name  = 'owncloud-files'
